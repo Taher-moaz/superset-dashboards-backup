@@ -1,0 +1,77 @@
+slice_name: Most Dominant Platforms 1
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 12__table
+  viz_type: pie
+  slice_id: 117
+  groupby:
+  - genre
+  metric:
+    aggregate: SUM
+    column:
+      column_name: global_sales
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 887
+      is_dttm: false
+      optionName: _col_Global_Sales
+      python_date_format: null
+      type: DOUBLE PRECISION
+      verbose_name: null
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    isNew: false
+    label: SUM(Global_Sales)
+    optionName: metric_k2rqz0zqhkf_49hu4kq9h3u
+    sqlExpression: null
+  adhoc_filters:
+  - clause: WHERE
+    comparator: '25'
+    expressionType: SIMPLE
+    filterOptionName: filter_znxs4o61aod_n5blgxo29r
+    isExtra: false
+    isNew: false
+    operator: <=
+    sqlExpression: null
+    subject: rank
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: year
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  threshold_for_other: 0
+  show_legend: false
+  legendType: scroll
+  legendOrientation: top
+  label_type: key
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  label_line: true
+  show_total: false
+  outerRadius: 67
+  donut: true
+  innerRadius: 45
+  extra_form_data: {}
+  dashboards:
+  - 9
+query_context: '{"datasource":{"id":12,"type":"table"},"force":false,"queries":[{"filters":[{"col":"rank","op":"<=","val":"25"},{"col":"year","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["genre"],"metrics":[{"aggregate":"SUM","column":{"column_name":"global_sales","description":null,"expression":null,"filterable":true,"groupby":true,"id":887,"is_dttm":false,"optionName":"_col_Global_Sales","python_date_format":null,"type":"DOUBLE
+  PRECISION","verbose_name":null},"expressionType":"SIMPLE","hasCustomLabel":false,"isNew":false,"label":"SUM(Global_Sales)","optionName":"metric_k2rqz0zqhkf_49hu4kq9h3u","sqlExpression":null}],"orderby":[[{"aggregate":"SUM","column":{"column_name":"global_sales","description":null,"expression":null,"filterable":true,"groupby":true,"id":887,"is_dttm":false,"optionName":"_col_Global_Sales","python_date_format":null,"type":"DOUBLE
+  PRECISION","verbose_name":null},"expressionType":"SIMPLE","hasCustomLabel":false,"isNew":false,"label":"SUM(Global_Sales)","optionName":"metric_k2rqz0zqhkf_49hu4kq9h3u","sqlExpression":null},false]],"annotation_layers":[],"row_limit":100,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[{"operation":"contribution","options":{"columns":["SUM(Global_Sales)"],"rename_columns":["SUM(Global_Sales)__contribution"]}}]}],"form_data":{"datasource":"12__table","viz_type":"pie","slice_id":117,"groupby":["genre"],"metric":{"aggregate":"SUM","column":{"column_name":"global_sales","description":null,"expression":null,"filterable":true,"groupby":true,"id":887,"is_dttm":false,"optionName":"_col_Global_Sales","python_date_format":null,"type":"DOUBLE
+  PRECISION","verbose_name":null},"expressionType":"SIMPLE","hasCustomLabel":false,"isNew":false,"label":"SUM(Global_Sales)","optionName":"metric_k2rqz0zqhkf_49hu4kq9h3u","sqlExpression":null},"adhoc_filters":[{"clause":"WHERE","comparator":"25","expressionType":"SIMPLE","filterOptionName":"filter_znxs4o61aod_n5blgxo29r","isExtra":false,"isNew":false,"operator":"<=","sqlExpression":null,"subject":"rank"},{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"year"}],"row_limit":100,"sort_by_metric":true,"color_scheme":"supersetColors","show_labels_threshold":5,"threshold_for_other":0,"show_legend":false,"legendType":"scroll","legendOrientation":"top","label_type":"key","number_format":"SMART_NUMBER","date_format":"smart_date","show_labels":true,"labels_outside":true,"label_line":true,"show_total":false,"outerRadius":67,"donut":true,"innerRadius":45,"extra_form_data":{},"dashboards":[9],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 9fb7ba1c-68a4-4a31-bb25-e43f84291f23
+version: 1.0.0
+dataset_uuid: 53d47c0c-c03d-47f0-b9ac-81225f808283
