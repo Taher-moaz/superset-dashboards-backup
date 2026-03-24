@@ -1,0 +1,36 @@
+slice_name: '# of Games That Hit 100k in Sales By Release Year'
+description: null
+certified_by: null
+certification_details: null
+viz_type: treemap_v2
+params:
+  datasource: 12__table
+  viz_type: treemap_v2
+  slice_id: 120
+  groupby:
+  - rank
+  metric: count
+  row_limit: 10
+  adhoc_filters:
+  - clause: WHERE
+    subject: year
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  color_scheme: supersetColors
+  show_labels: true
+  show_upper_labels: true
+  label_type: key_value
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 9
+  - 12
+query_context: '{"datasource":{"id":12,"type":"table"},"force":false,"queries":[{"filters":[{"col":"year","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["rank"],"metrics":["count"],"annotation_layers":[],"row_limit":10,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"12__table","viz_type":"treemap_v2","slice_id":120,"groupby":["rank"],"metric":"count","row_limit":10,"adhoc_filters":[{"clause":"WHERE","subject":"year","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"color_scheme":"supersetColors","show_labels":true,"show_upper_labels":true,"label_type":"key_value","number_format":"SMART_NUMBER","date_format":"smart_date","extra_form_data":{},"dashboards":[9,12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 2b69887b-23e3-b46d-d38c-8ea11856c555
+version: 1.0.0
+dataset_uuid: 53d47c0c-c03d-47f0-b9ac-81225f808283
